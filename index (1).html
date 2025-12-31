@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>anonymus Hub — Página Oficial (Safe)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f172a; --bg2:#071029; --accent:#b83333; --glass:rgba(255,255,255,0.04);
+      --glass-2:rgba(255,255,255,0.02); --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(120deg,var(--bg1),var(--bg2));color:#e6eef8}
+    .wrap{max-width:1080px;margin:48px auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#121826,#271017);display:grid;place-items:center;font-weight:800;font-size:20px;color:var(--accent);box-shadow:var(--card-shadow)}
+    h1{font-size:28px;margin:0}
+    p.lead{margin:6px 0 0;color:#cfe3ff8a}.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+.card{background:linear-gradient(180deg,var(--glass),var(--glass-2));padding:22px;border-radius:16px;box-shadow:var(--card-shadow);backdrop-filter:blur(6px)}
+
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.feature{padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));}
+
+.cta{display:flex;flex-direction:column;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 14px;border-radius:10px;font-weight:600;text-decoration:none}
+.btn-discord{background:linear-gradient(90deg,#5865f2,#4752c4);color:white}
+.btn-join{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dfeeff}
+
+footer{margin-top:28px;color:#9fb6df66;font-size:13px}
+
+/* small responsive */
+@media (max-width:920px){.hero{grid-template-columns:1fr} .features{grid-template-columns:1fr}}
+
+/* subtle animations */
+.logo{transform:translateZ(0);animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">annmys</div>
+        <div>
+          <h1>anonymus Hub</h1>
+          <p class="lead">Página de comunidade — informações públicas e link de contato.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#comunidade" class="btn btn-join">Comunidade</a>
+        <a href="#contato" class="btn btn-join">Contato</a>
+      </nav>
+    </header><main class="hero">
+  <section class="card">
+    <h2>Sobre</h2>
+    <p style="color:#cfe3ffb3">Esta página apresenta informações públicas conhecidas sobre o projeto <strong>anonymus Hub</strong> e fornece um canal oficial de contato. O conteúdo aqui é intencionalmente não técnico e não contém instruções que violem termos de serviço ou leis.</p>
+
+    <div class="features" aria-hidden="false">
+      <div class="feature">
+        <h3>Nome</h3>
+        <p>anonymus Hub</p>
+      </div>
+      <div class="feature">
+        <h3>Canal público</h3>
+        <p>Discord oficial : https://discord.gg/kp9mDtp36<a href="https://discord.gg/kp9mDtp36" target="_blank" rel="noopener" style="color:var(--accent)"https://discord.gg/kp9mDtp36</a></p>
+      </div>
+
+      <div class="feature">
+        <h3>Escopo conhecido</h3>
+        <p>O nome foi associado publicamente a um "hub" relacionado a scripts e automações para jogos. Nenhum detalhe técnico, códigos ou instruções estão presentes neste documento.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Informações adicionadas</h3>
+        <p>Somente o nome e o link do Discord foram adicionados — nada mais foi assumido ou inventado.</p>
+      </div>
+    </div>
+
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:18px 0">
+    <h3>Declaração</h3>
+    <p style="color:#ffb3b3">o script está no discord no canal " Scripts".</p>
+  </section>
+
+  <aside class="card cta" style="align-self:start">
+    <h3 id="comunidade">Entrar no Discord</h3>
+    <p style="margin:0 0 6px 0;color:#cfe3ffb3">Entre no canal oficial para discussões, regras da comunidade e suporte.</p>
+    <a class="btn btn-discord" href="https://discord.gg/kp9mDtp36" target="_blank" rel="noopener">
+      Abrir Discord — anonymus Hub
+    </a>
+
+    <div style="margin-top:14px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);font-size:13px;color:#9fb6df">
+      <strong id="contato">Contato:</strong>
+      <p style="margin:8px 0 0">não spame ou quebrei as regras do servidor e da comunidade.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="card">
+  <p><strong>Nota:</strong> Conteúdo limitado ao que foi fornecido. Para adicionar informações públicas e legítimas (ex.: changelogs oficiais, screenshots permitidas, regras da comunidade), envie os dados diretamente aqui.</p>
+  <p style="margin-top:8px">Gerado por um assistente que se recusa a fornecer material que facilite atividades ilegais ou violadoras de plataformas.</p>
+</footer>
+
+  </div>
+</body>
+</html>
